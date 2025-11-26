@@ -1,0 +1,213 @@
+/* Custom CSS for Totoro Flix - Enhanced with Bootstrap and JS Integration */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8e7; /* Light green for forest background */
+  color: #2d5016; /* Dark green for text */
+  margin: 0;
+  padding: 0;
+  background-image: url('media/img/forest-pattern.png'); /* Optional subtle pattern */
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1e3a8a; /* Blue for headings */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #4ade80, #22c55e); /* Green gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #16a34a;
+}
+
+header .navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover {
+  color: #fbbf24 !important; /* Yellow hover */
+}
+
+header .btn-warning {
+  background-color: #fbbf24;
+  border-color: #f59e0b;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.05);
+}
+
+main ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main ul li {
+  background-color: #e0f2fe; /* Light blue */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #0ea5e9;
+}
+
+/* Product Cards and JS Animations */
+.product-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #fef3c7; /* Soft yellow */
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #1e3a8a;
+}
+
+.card-text {
+  color: #374151;
+}
+
+.btn-success {
+  background-color: #22c55e;
+  border-color: #16a34a;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #16a34a;
+}
+
+/* Modal Customizations (for Cart) */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  background-color: #e0f2fe;
+  border-bottom: 1px solid #0ea5e9;
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-body {
+  background-color: #fefefe;
+}
+
+.list-group-item {
+  border: none;
+  background-color: #f8fafc;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+/* Toast Notifications */
+.toast {
+  border-radius: 10px;
+  background-color: #22c55e;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.toast-container {
+  z-index: 1050; /* Ensure it appears above other elements */
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: #ffffff;
+  padding: 20px 0;
+  border-top: 3px solid #1e40af;
+}
+
+footer a {
+  color: #fbbf24;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer .col-md-4 {
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 10px;
+    margin: 10px;
+  }
+  
+  header .navbar-nav {
+    text-align: center;
+  }
+  
+  .product-card {
+    margin-bottom: 20px;
+  }
+  
+  footer .row {
+    text-align: center;
+  }
+  
+  .modal-dialog {
+    margin: 10px;
+  }
+  
+  .toast-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: auto;
+    top: auto;
+  }
+}
+
+/* Additional Whimsical Touches */
+.synopsis {
+  font-style: italic;
+  background-color: #dbeafe;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px dashed #0ea5e9;
+}
+
+.voice-actor {
+  font-weight: bold;
+  color: #7c3aed;
+}
